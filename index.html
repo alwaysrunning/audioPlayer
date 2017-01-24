@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <div class="audiosPlay">
+                <div class="audioinner clearfix">
+                    <div class="currentAudio"><img /></div>
+                    <div class="audioCtn">
+                        <div class="progressBar">
+                            <div class="progressBac">
+                                <div class="drag"><span></span></div>
+                                <div class="speed"></div>
+                            </div>       
+                        </div>
+                        <div class="audioName"></div>
+                        <div class="timeDetail">
+                            <span class="jq-current-time">00:00</span>/<span class="allTime" id="allTime">00:00</span>
+                        </div>
+                        <div class="audioplayer">
+                            <div class="playing">
+                                <div class="beat1 beat"></div><div class="beat2 beat"></div><div class="beat3 beat"></div>
+                                <div class="beat4 beat"></div>
+                            </div>
+                        </div>
+                        <div class="controlBtn clearfix" id="controlBtn">
+                            <div class="jq-next"></div>
+                            <div class="control jq-play"></div>
+                            <div class="control jq-pause" style="display:none"></div>
+                            <div class="jq-previous"></div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="js/audio.js"></script>
+        <script type="text/javascript" src="js/audioPlayerManager.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
